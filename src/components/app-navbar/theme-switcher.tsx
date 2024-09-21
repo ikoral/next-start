@@ -19,7 +19,7 @@ export function ThemeSwitcher({ showLabel }: { showLabel?: boolean }) {
 
   return (
     <Switch
-      isSelected={theme === "light"}
+      isSelected={theme === "dark"}
       onValueChange={() => setTheme(theme === "dark" ? "light" : "dark")}
       size="lg"
       color="success"
