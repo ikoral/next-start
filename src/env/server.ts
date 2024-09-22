@@ -5,8 +5,6 @@ import { ZodError, z } from "zod";
 
 expand(config());
 
-console.log(process.env.DATABASE_URL);
-
 export const env = createEnv({
   server: {
     NODE_ENV: z.enum(["development", "production"]),
