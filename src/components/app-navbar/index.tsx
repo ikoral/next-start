@@ -43,17 +43,19 @@ export default function AppNavbar() {
       label: "Products",
       href: "/products",
     },
-    {
-      label: "Orders",
-      href: "/orders",
-    },
   ];
 
   if (status === "authenticated") {
-    menuItems.push({
-      label: "Profile",
-      href: "/profile",
-    });
+    menuItems.push(
+      {
+        label: "Profile",
+        href: "/profile",
+      },
+      {
+        label: "Guestbook",
+        href: "/guestbook",
+      }
+    );
   }
 
   return (
